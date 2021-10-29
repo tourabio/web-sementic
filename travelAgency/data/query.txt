@@ -1,0 +1,8 @@
+PREFIX ns: <http://www.semanticweb.org/agence/ontologies/2021/9/agencedevoyage-ontology.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX m: <http://www.semanticweb.org/agence/ontologies/2021/9/agencedevoyage-ontology#>
+
+SELECT *
+WHERE {
+  ?employee rdf:type m:Employee.
+}

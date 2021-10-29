@@ -1,0 +1,43 @@
+<div class="wrapper">
+  <div
+    class="page-header page-header-xs"
+    data-parallax="true"
+    style="background-image: url('./assets/img/fabio-mangione.jpg')"
+  >
+    <div class="filter"></div>
+  </div>
+  <div class="section profile-content">
+    <div class="container">
+      <div class="owner">
+        <div class="avatar">
+          <img
+            src="./assets/img/destination.jpg"
+            alt="Circle Image"
+            class="img-circle img-no-padding img-responsive"
+          />
+        </div>
+        <div class="name">
+          <h4 class="title">destination's list<br /></h4>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">City</th>
+              <th scope="col">Country</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let destination of destinations; let i = index">
+              <th scope="row">{{ i }}</th>
+              <td>{{ destination.city.value }}</td>
+              <td>{{ destination.country.value }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

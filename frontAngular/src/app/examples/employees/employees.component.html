@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <div
+    class="page-header page-header-xs"
+    data-parallax="true"
+    style="background-image: url('./assets/img/fabio-mangione.jpg')"
+  >
+    <div class="filter"></div>
+  </div>
+  <div class="section profile-content">
+    <div class="container">
+      <div class="owner">
+        <div class="avatar">
+          <img
+            src="./assets/img/employees.jpeg"
+            alt="Circle Image"
+            class="img-circle img-no-padding img-responsive"
+          />
+        </div>
+        <div class="name">
+          <h4 class="title">Employee's list<br /></h4>
+        </div>
+      </div>
+      <div class="row">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let employee of employees; let i = index">
+              <th scope="row">{{ i }}</th>
+              <td>{{ employee.name.value }}</td>
+              <td>{{ employee.lastname.value }}</td>
+              <td>{{ employee.phone.value }}</td>
+              <td>{{ employee.email.value }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
